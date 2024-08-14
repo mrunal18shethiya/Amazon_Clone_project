@@ -1,0 +1,26 @@
+<div class="return-container">
+  <p>Return works!</p>
+  <form (ngSubmit)="onSubmit(returnForm)" #returnForm="ngForm">
+      <div>
+          <label for="orderId">Order ID</label>
+          <input type="text" id="orderId" name="orderid" ngModel required>
+      </div>
+      <div>
+          <label for="productId">Product ID</label>
+          <input type="text" id="productId" name="productid" ngModel required>
+      </div>
+      <div>
+          <label for="reason">Reason for Return</label>
+          <select id="reason" name="reason" ngModel required>
+              <option value="damaged">Damaged</option>
+              <option value="wrongItem">Wrong Item</option>
+              <option value="other">Other</option>
+          </select>
+      </div>
+      <div>
+          <label for="comments">Comments</label>
+          <textarea id="comments" name="comments" ngModel></textarea>
+      </div>
+      <button type="submit">Submit Return Request</button>
+  </form>
+</div>

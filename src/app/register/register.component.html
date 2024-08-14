@@ -1,0 +1,18 @@
+<p>register works!</p>
+<h1>Register</h1>
+<div class="register-container">
+    
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="name"><br>
+    <label for="username">Username:</label>
+    <input type="text" id="username" [(ngModel)]="username"><br>
+    <label for="password">Create password:</label>
+    <input type="password" id="password" [(ngModel)]="password"><br>
+   Account type:<select [(ngModel)]="accountType">
+        <option [value]="2">seller</option>
+        <option [value]="3">buyer</option>
+    </select><br>
+    
+    
+    <button (click)="registers()">Register</button><br>
+</div>

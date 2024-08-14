@@ -1,0 +1,48 @@
+<div class="product-container">
+    <p>Product works!</p>
+
+    <h3>Add Product</h3>
+    <label>Name:</label>
+    <input type="text" [(ngModel)]="name" class="input-field"><br>
+
+    <label>Price:</label>
+    <input type="text" [(ngModel)]="price" class="input-field"><br>
+
+    <label>Quantity:</label>
+    <input type="text" [(ngModel)]="quantity" class="input-field"><br>
+
+    <label>Description:</label>
+    <input type="text" [(ngModel)]="description" class="input-field"><br>
+
+    <label>Discount:</label>
+    <input type="text" [(ngModel)]="discount" class="input-field"><br>
+
+    <label>Category:</label>
+    <select [(ngModel)]="categoryid" class="select-field">
+        <option *ngFor="let cat of list" [value]="cat.id">{{cat.name}}</option>
+    </select><br>
+
+    <button (click)="addProd()" class="submit-button">Add</button>
+
+    <!-- Display list -->
+    <table border="5px">
+        <tr>
+            <th>S No</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Description</th>
+            <th>Discount</th>
+            <th>Category</th>
+        </tr>
+        <tr *ngFor="let item of list2; let i = index">
+            <td>{{i + 1}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.price}}</td>
+            <td>{{item.quantity}}</td>
+            <td>{{item.description}}</td>
+            <td>{{item.discount}}</td>
+            <td>{{item.catName}}</td>
+        </tr>
+    </table>
+</div>

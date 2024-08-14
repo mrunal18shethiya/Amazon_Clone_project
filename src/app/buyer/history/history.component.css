@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    color: #111;
+    margin: 0;
+    padding: 20px;
+}
+
+/* History Container */
+.history-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Table Styles */
+.history-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.history-container th,
+.history-container td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+.history-container th {
+    background-color: #232F3E;
+    color: white;
+    font-size: 16px;
+}
+
+.history-container td {
+    background-color: #fefefe;
+    color: #111;
+}
+
+/* Button Styles */
+.history-container button {
+    background-color: #febd69;
+    border: none;
+    color: #111;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.history-container button:hover {
+    background-color: #f3a847;
+}
+
+/* Rating Input */
+.history-container input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* Rating Section */
+.history-container .rating-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.history-container .rating-section button {
+    background-color: #febd69;
+    border: none;
+    color: #111;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.history-container .rating-section button:hover {
+    background-color: #f3a847;
+}

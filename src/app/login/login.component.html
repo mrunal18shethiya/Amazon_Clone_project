@@ -1,0 +1,174 @@
+<!-- <p>login works!</p> -->
+<h1>Welcome to Amazon</h1>
+<header>
+    <nav>
+        <div class="nav-left">
+            <div class="nav-logo">
+                <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20240326183545/amazon.png">
+            </div>
+            <div class="location">
+                <p class="top-text">Deliver to</p>
+                <div class="location-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="bottom-text">India</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-center">
+            <select class="search-dropdown">
+                <option>All</option>
+                <option>All Departments</option>
+                <option>Arts & Crafts</option>
+            </select>
+            <input type="text" placeholder="Search Amazon" 
+                class="search-box">
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass" 
+                    style="color: #28416c;">
+                </i>
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <div class="language-option">
+                <div class="flag">
+                    <i class="fa-regular fa-flag"></i>
+                </div>
+                <select class="select-language">
+                    <option value="lan">English</option>
+                    <option value="lan">Hindi</option>
+                </select>
+            </div>
+
+            <div class="account-option">
+                <p class="top-text">
+                   <h5> Hello, sign in
+                </h5>
+                Login
+            </div>
+
+            <div  class="return-option">
+                <p class="top-text">
+                    Returns
+                </p>
+            </div>
+
+            <div class="order-option">
+                <p class="top-text">
+                     Orders History 
+                </p>
+            </div>
+
+            <div class="cart-option">
+                <div class="cart-logo">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <p class="top-text">Cart</p>
+            </div>
+        </div>
+    </nav>
+
+    <div class="nav-options">
+        <div class="all-logo">
+            <i class="fa-solid fa-bars"></i>
+            <p class="list">All</p>
+        </div>
+
+        <div class="options">
+            <p>Today's Deals</p>
+            <p>Customer Service</p>
+            <p>Registry</p>
+            <p>Gift Cards</p>
+        </div>
+    </div>
+</header>
+<div class="login-container">
+    
+    <label for="username">Username:</label>
+    <input type="text" id="username" [(ngModel)]="username"><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" [(ngModel)]="password"><br>
+    <button (click)="login()">Login</button><br><br>
+    <h5>New User ?</h5><br>
+    <button (click)="register()">Register</button><br>
+</div>
+
+<footer>
+    <a href="#" class="back-option">
+        Back to top
+    </a>
+
+    <div class="footer-links">
+        <ul>
+            <p>Get to Know Us</p>
+            <a>Careers</a>
+            <a>Blog</a>
+            <a>About Amazon</a>
+            <a>Investor Relations</a>
+            <a>Amazon Devices</a>
+            <a>Amazon Science</a>
+        </ul>
+        <ul>
+            <p>Make Money with Us</p>
+            <a>Sell products on Amazon</a>
+            <a>Sell on Amazon Business</a>
+            <a>Sell apps on Amazon</a>
+            <a>Become an Affiliate</a>
+            <a>Self-Publish with Us</a>
+            <a>Host an Amazon Hub</a>
+            <a>›See More Make Money with Us</a>
+        </ul>
+        <ul>
+            <p>Amazon Payment Products</p>
+            <a>Amazon Business Card</a>
+            <a>Shop with Points</a>
+            <a>Reload Your Balance</a>
+            <a>Amazon Currency Converter</a>
+        </ul>
+        <ul>
+            <p>Let Us Help You</p>
+            <a>Amazon and COVID-19</a>
+            <a>Your Account</a>
+            <a>Your Orders</a>
+            <a>Shipping Rates & Policies</a>
+            <a>Returns & Replacements</a>
+            <a>Manage Your Content and Devices</a>
+            <a>Amazon Assistant</a>
+            <a>Help</a>
+        </ul>
+    </div>
+    <div class="country-info">
+        <div class="logo">
+            <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20240326183545/amazon.png">
+        </div>
+        <div class="options">
+            <select>
+                <option value="En">
+                    English
+                </option>
+            </select>
+            <select>
+                <option value="1">
+                    ₹ - RS Indian Currency
+                </option>
+            </select>
+
+            <select>
+                <option value="4"> 
+                    India
+                </option>
+            </select>
+        </div>
+    </div>
+    <div class="policies">
+        <div class="pages">
+            <a href="#">Conditions of Use</a>
+            <a href="#">Privacy Notice</a>
+            <a href="#">Your Ads Privacy Choices</a>
+        </div>
+        © 1996-2023, Amazon.com, Inc. or its affiliates
+    </div>
+</footer>

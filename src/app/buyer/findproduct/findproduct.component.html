@@ -1,0 +1,47 @@
+<div class="filter-container">
+    <p>Filter works!</p>
+
+    <label>Category:</label>
+    <select [(ngModel)]="categoryid">
+        <option *ngFor="let cat of list" [value]="cat.id">{{cat.name}}</option>
+    </select><br>
+
+    <label>Minimum Price:</label>
+    <input type="text" [(ngModel)]="minprice"><br>
+
+    <label>Maximum Price:</label>
+    <input type="text" [(ngModel)]="maxprice"><br>
+
+    <label>Minimum Rating:</label>
+    <input type="text" [(ngModel)]="minrating"><br>
+
+    <button (click)="getProd()">Add</button>
+
+    <table>
+        <tr>
+            <th>SR NO</th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Rating</th>
+            <th>Discount</th>
+            <th>Description</th>
+            <th>Stock</th>
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let item of list2; let i = index">
+            <td>{{i + 1}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.price}}</td>
+            <td>{{item.rating}}</td>
+            <td>{{item.discount}}</td>
+            <td>{{item.description}}</td>
+            <td>
+                <p *ngIf="item.quantity <= 2">Limited Stock</p>
+                <p *ngIf="item.quantity > 2" class="available">Available</p>
+            </td>
+            <td>
+                <button (click)="addCart(item.id)">Add to Cart</button>
+            </td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    color: #111;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Buyer Container */
+.buyer-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Buttons */
+.buyer-container button {
+    background-color: #febd69;
+    border: none;
+    color: #111;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.buyer-container button:hover {
+    background-color: #f3a847;
+}
+
+.buyer-container button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(252, 186, 52, 0.5);
+}
+
+/* Component Containers */
+.buyer-container div {
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Specific Styles for Different Components */
+.buyer-container div > app-cartprodcut,
+.buyer-container div > app-findproduct,
+.buyer-container div > app-history,
+.buyer-container div > app-return {
+    background-color: #fefefe;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #232F3E;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .search-bar {
+    flex-grow: 1;
+    display: flex;
+    margin: 0 20px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .search-bar button {
+    background-color: #FF9900;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+  }

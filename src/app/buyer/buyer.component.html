@@ -1,0 +1,40 @@
+<header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="#">
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326183545/amazon.png" alt="Amazon Logo">
+        </a>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for products...">
+        <button>Search</button>
+      </div>
+      
+    </div>
+  </header>
+ 
+<div class="buyer-container">
+    <!-- <p>buyer works!</p> -->
+
+    <p><button (click)="changeCat(1)">Cart</button></p>
+    <div *ngIf="WhatToShow==1">
+        <app-cartprodcut></app-cartprodcut>
+    </div>
+    
+    <p><button (click)="changeCat(2)">Filter</button></p>
+    <div *ngIf="WhatToShow==2">
+        <app-findproduct></app-findproduct>
+    </div>
+    
+    <p><button (click)="changeCat(3)">History</button></p>
+    <div *ngIf="WhatToShow==3">
+        <app-history></app-history>
+    </div>
+    <p><button (click)="changeCat(4)">Return</button></p>
+    <div *ngIf="WhatToShow==4">
+        <app-return></app-return>
+        
+    </div>
+</div>
+
+  

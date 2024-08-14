@@ -1,0 +1,105 @@
+/* Styles for cartprodcut.component.css */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    color: #111;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Filter Container */
+.filter-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Form Elements */
+.filter-container select,
+.filter-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Button Styles */
+.filter-container button {
+    background-color: #febd69;
+    border: none;
+    color: #111;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.filter-container button:hover {
+    background-color: #f3a847;
+}
+
+/* Table Styles */
+.filter-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.filter-container th,
+.filter-container td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+.filter-container th {
+    background-color: #232F3E;
+    color: white;
+    font-size: 16px;
+}
+
+.filter-container td {
+    background-color: #fefefe;
+    color: #111;
+}
+
+.filter-container td p {
+    margin: 0;
+    font-size: 12px;
+    color: #B12704; /* Red color for warnings like "limited stock" */
+}
+
+.filter-container td p.available {
+    color: #007600; /* Green color for availability */
+}
+
+/* Add to Cart Button */
+.filter-container td button {
+    background-color: #febd69;
+    border: none;
+    color: #111;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.filter-container td button:hover {
+    background-color: #f3a847;
+}

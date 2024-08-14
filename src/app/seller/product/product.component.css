@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    color: #111;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container */
+.product-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Headings */
+.product-container h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007185;
+    margin-bottom: 20px;
+}
+
+/* Inputs and Select */
+.product-container input[type="text"],
+.product-container select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.product-container input[type="text"]:focus,
+.product-container select:focus {
+    border-color: #007185;
+}
+
+/* Button */
+.product-container button {
+    background-color: #febd69;
+    border: none;
+    color: #111;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.product-container button:hover {
+    background-color: #f3a847;
+}
+
+/* Table */
+.product-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.product-container th,
+.product-container td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+.product-container th {
+    background-color: #232F3E;
+    color: white;
+    font-size: 16px;
+}
+
+.product-container td {
+    background-color: #fefefe;
+    color: #111;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .product-container {
+        padding: 10px;
+    }
+
+    .product-container h3 {
+        font-size: 20px;
+    }
+
+    .product-container input[type="text"],
+    .product-container select {
+        width: 100%;
+    }
+
+    .product-container button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .product-container table,
+    .product-container th,
+    .product-container td {
+        font-size: 14px;
+    }
+}
